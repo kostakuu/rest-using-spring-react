@@ -1,0 +1,1 @@
+INSERT INTO _user (deleted, full_name, gender, password, username) VALUES (false, 'Kosta Kupresak', 0, '$2a$10$UCU.qYYpS18.9Va9F8f8R.Ty1cQp79xTpZqTk2FngzT4ecLJSLRTS', 'kostakuu');
