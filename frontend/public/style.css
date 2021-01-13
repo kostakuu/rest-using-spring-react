@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
 :root {
-	--color-independence: #555B6E;
-	--color-morning-blue: #89B0AE;
-	--color-powder-blue: #BEE3DB;
-	--color-cultured: #ECEAEA;
-	--color-cultured-darker: #CBCBCB;
-	--color-aprucot: #FFD6BA;
+	--color-primary: #DF5D40;
+	--color-primary-light: #DF8C40;
+	--color-primary-lighter: #F3D4B7;
+	--color-secondary: #4495A2;
+	--color-primary-grey-lighter: #ECEAEA;
+	--color-primary-grey-darker: #CBCBCB;
 	--color-white: #FFFFFF;
 	--color-black: #000000;
-	--color-red: #D64222;
-	--color-green: #118D24;
 }
 
 * {
@@ -43,12 +41,7 @@ body {
 	flex: 1;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--color-powder-blue);
-}
-
-.error-text {
-	color: var(--color-red);
-	font-weight: bold;
+	background-color: var(--color-primary-light);
 }
 
 input, select {
@@ -64,9 +57,9 @@ input[type=checkbox] {
 }
 
 input[type=submit] {
-	background-color: var(--color-independence);
+	background-color: var(--color-secondary);
 	color: var(--color-white);
-	border: 1px solid var(--color-independence);
+	border: 1px solid var(--color-secondary);
 	border-radius: 5px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -75,8 +68,8 @@ input[type=submit] {
 
 input[type=submit].second-button {
 	background-color: var(--color-white);
-	color: var(--color-independence);
-	border: 1px solid var(--color-independence);
+	color: var(--color-secondary);
+	border: 1px solid var(--color-secondary);
 	border-radius: 5px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -85,16 +78,16 @@ input[type=submit].second-button {
 }
 
 input[type=submit]:hover {
-	background-color: var(--color-morning-blue);
+	background-color: var(--color-primary);
 	color: var(--color-white);
-	border: 1px solid var(--color-morning-blue);
+	border: 1px solid var(--color-primary);
 }
 
 .navigation-container {
 	display: flex;
 	align-items: center;
 	margin: 0;
-	background-color: var(--color-morning-blue);
+	background-color: var(--color-primary);
 }
 
 .navigation-container > .search-container {
@@ -104,7 +97,7 @@ input[type=submit]:hover {
 	justify-content: center;
 	margin: 0 20px;
 	background-color: var(--color-white);
-	box-shadow: 2px 2px 10px -5px var(--color-cultured-darker);
+	box-shadow: 2px 2px 10px -5px var(--color-primary-grey-darker);
 	height: 40px;
 	border-radius: 4px;
 }
@@ -112,7 +105,7 @@ input[type=submit]:hover {
 .navigation-container > .search-container > svg {
 	width: 40px;
 	font-size: 20px;
-	color: var(--color-cultured-darker);
+	color: var(--color-primary-grey-darker);
 }
 
 .navigation-container > .search-container > input {
@@ -142,16 +135,16 @@ input[type=submit]:hover {
 	align-items: center;
 	justify-content: center;
 	padding: 10px 20px;
-	border-bottom: 3px solid var(--color-morning-blue);
+	border-bottom: 3px solid var(--color-primary);
 }
 
 .navigation > li.item {
-	background-color: var(--color-morning-blue);
+	background-color: var(--color-primary);
 }
 
 .navigation > li.item:hover {
 	border-bottom: 3px solid var(--color-white);
-	background-color: var(--color-independence);
+	background-color: var(--color-secondary);
 }
 
 .navigation > li.item > a {
@@ -184,7 +177,7 @@ input[type=submit]:hover {
 }
 
 .navigation > .active a, .navigation > .active svg {
-	color: var(--color-independence) !important;
+	color: var(--color-secondary) !important;
 }
 
 .container {
@@ -192,7 +185,7 @@ input[type=submit]:hover {
 	flex: 1;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--color-powder-blue);
+	background-color: var(--color-primary-light);
 }
 
 .body {
@@ -202,7 +195,7 @@ input[type=submit]:hover {
 	min-height: 90%;
 	padding: 0;
 	border-radius: 5px;
-	box-shadow: 2px 2px 15px 2px var(--color-morning-blue);
+	box-shadow: 2px 2px 15px 2px var(--color-primary);
 	background-color: var(--color-white);
 }
 
@@ -216,7 +209,7 @@ input[type=submit]:hover {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	border-top: 1px solid var(--color-independence);
+	border-top: 1px solid var(--color-secondary);
 }
 
 table, tr, td {
@@ -228,12 +221,12 @@ table, tr, td {
 table {
 	width: 100%;
 	padding: 0;
-	box-shadow: 2px 2px 10px -5px var(--color-independence);
+	box-shadow: 2px 2px 10px -5px var(--color-secondary);
 }
 
 table > thead > tr {
 	color: var(--color-white);
-	background-color: var(--color-independence);
+	background-color: var(--color-secondary);
 	border: 0;
 	height: 50px;
 	margin-bottom: 10px;
@@ -249,7 +242,7 @@ table > tbody > tr > td {
 }
 
 table > tbody > tr:nth-child(even) {
-	background-color: var(--color-cultured);
+	background-color: var(--color-primary-grey-lighter);
 }
 
 table > tbody > tr > td {
@@ -257,7 +250,7 @@ table > tbody > tr > td {
 }
 
 table > tbody > tr:hover {
-	background-color: var(--color-morning-blue);
+	background-color: var(--color-primary);
 	color: var(--color-white);
 	cursor: pointer;
 }
@@ -274,7 +267,7 @@ table > tbody > tr:hover {
 	justify-content: center;
 	width: 300px;
 	background-color: var(--color-white);
-	box-shadow: -2px 5px 11px -2px var(--color-cultured);
+	box-shadow: -2px 5px 11px -2px var(--color-primary-grey-lighter);
 	border-radius: 4px;
 	margin: 10px;
 }
@@ -306,7 +299,7 @@ table > tbody > tr:hover {
 }
 
 .form .form-footer {
-	background-color: var(--color-cultured);
+	background-color: var(--color-primary-grey-lighter);
 	width: 100%;
 	height: 50px;
 	border-radius: 4px;
@@ -320,7 +313,7 @@ table > tbody > tr:hover {
 }
 
 .form .form-footer > button.save {
-	background-color: var(--color-independence);
+	background-color: var(--color-secondary);
 	color: var(--color-white);
 	border-radius: 4px;
 }
@@ -331,7 +324,7 @@ table > tbody > tr:hover {
 }
 
 .form .form-footer > button:hover {
-	background-color: var(--color-morning-blue);
+	background-color: var(--color-primary);
 	box-shadow: -2px 3px 12px -5px var(--color-black);
 }
 
@@ -342,7 +335,7 @@ table > tbody > tr:hover {
 	min-height: 300px;
 	padding: 20px;
 	border-radius: 5px;
-	box-shadow: 2px 2px 15px 2px var(--color-morning-blue);
+	box-shadow: 2px 2px 15px 2px var(--color-primary);
 	background-color: var(--color-white);
 }
 
@@ -350,8 +343,8 @@ table > tbody > tr:hover {
 	text-align: center;
 	padding: 0 0 5px 0;
 	margin: 0;
-	border-bottom: 2px solid var(--color-independence);
-	color: var(--color-independence);
+	border-bottom: 2px solid var(--color-secondary);
+	color: var(--color-secondary);
 	text-transform: uppercase;
 }
 
@@ -365,7 +358,7 @@ table > tbody > tr:hover {
 }
 
 .add-new-btn {
-	background-color: var(--color-independence);
+	background-color: var(--color-secondary);
 	color: var(--color-white);
 	border-radius: 4px;
 	border: none;
